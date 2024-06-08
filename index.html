@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya Purama Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Adithya Purama</h1>
+            <p class="animate__animated animate__fadeInDown">Tech Enthusiast | Aspiring Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="animate__animated animate__fadeInLeft">About Me</a></li>
+                    <li><a href="#skills" class="animate__animated animate__fadeInLeft">Skills</a></li>
+                    <li><a href="#experience" class="animate__animated animate__fadeInLeft">Experience</a></li>
+                    <li><a href="#certifications" class="animate__animated animate__fadeInLeft">Certifications</a></li>
+                    <li><a href="#projects" class="animate__animated animate__fadeInLeft">Projects</a></li>
+                    <li><a href="#contact" class="animate__animated animate__fadeInLeft">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="profile-picture.jpg" alt="Adithya Purama - Profile Picture">
+                <p>I am a B.Tech student at Anurag University with a passion for technology. I am eager to learn and grow as a developer. My skills lie in programming languages like C, Java, and Python. I am also proficient in CSS for web development.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Skills</h2>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>CSS</li>
+                </ul>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Organization Skills</li>
+                    <li>Communication Skills</li>
+                    <li>Out of the box thinking</li>
+                    <li>Flexibility</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Experience</h2>
+                <button onclick="toggleContent('experience-content')" class="animate__animated animate__fadeInUp">Click to Experience Details</button>
+                <div id="experience-content" style="display:none;">
+                    <h3>Education History</h3>
+                    <ul>
+                        <li>Anurag University (B.Tech) - 7.5CGPA 2025</li>
+                        <li>Geethannjali Junior College (Intermediate) - 78% 2021 </li>
+                    </ul>
+                    <h3>Professional Experience</h3>
+                    <ul>
+                        <li>Anurag University - Event Hospitality Lead </li>
+                        <li>Incube (Anurag University) - Geeks for Geeks Department Coordinator</li>
+                        <li>NCC AIR WING CADET</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Certifications</h2>
+                <button onclick="toggleContent('certifications-content')" class="animate__animated animate__fadeInUp">Click to Certifications Details</button>
+                <div id="certifications-content" style="display:none;">
+                    <ul>
+                        <li>Certified in Networking Essentials by Cisco Networking Academy (Year)</li>
+                        <li>Certified in IT Essentials by Cisco Networking Academy (Year)</li>
+                        <li>Certified in Getting Started with Enterprise Data Science by IBM (Year)</li>
+                        <li>Certified in C for Everyone by Coursera (Year)</li>
+                        <li>Certified in Python in Infosys Springboard (Year)</li>
+                        <li>Certified in Microsoft Excel for Data Analyst by Infosys Springboard (Year)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="carousel">
+                    <div class="carousel-item animate__animated animate__fadeIn">
+                        <img src="project1.jpg" alt="Project 1">
+                        <p>online booking potal for college auditorium </p>
+                    </div>
+                            </section>
+
+        <section id="contact" class="contact-section animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Get in touch!</p>
+                <form id="contact-form" class="animate__animated animate__fadeInUp">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <ul>
+                    <li><a href="mailto:adithyapurama11@gmail.com">adithyapurama11@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/aditya-purama-0b9010269/">LinkedIn Profile</a></li>
+                    <li><a href="https://github.com/adithyapurama">GitHub Profile</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Adithya Purama - <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function toggleContent(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        $(document).ready(function() {
+            $('.carousel-item:gt(0)').hide();
+            setInterval(function() {
+                $('.carousel-item:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.carousel');
+            }, 3000);
+        });
+
+        $("#contact-form").submit(function(event) {
+            event.preventDefault();
+            alert("Form submitted successfully!");
+            // Here you would typically handle form submission (e.g., send data to your server)
+        });
+    </script>
+</body>
+</html>

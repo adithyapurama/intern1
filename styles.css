@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* About Section */
+.about-section {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.about-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-section p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+#skills {
+    background: #343539;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#skills h2, #skills h3 {
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Experience Section */
+#experience {
+    background: #eaecee;
+    padding: 50px 0;
+}
+
+#experience h2, #experience h3 {
+    text-align: center;
+}
+
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience li {
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #2f3236;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Certifications Section */
+#certifications {
+    background: #33363a;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#certifications h2 {
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #2d3035;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+form {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #2e3238;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #373a3f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
